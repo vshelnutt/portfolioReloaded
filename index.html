@@ -9,17 +9,39 @@
 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
 
   <title>Vincent Shelnutt</title>
 </head>
 <body>
+
+
 <header>Vincent Shelnutt</header>
 <!-- INTRO SECTION -->
 <section id="intro">
     <img id="logo" alt="logo" src="logo.jpg">
   <div class="social">
-    <a href="https://github.com/vshelnutt"><i class="fab fa-github"></i></a><button id="start">Get Started</button><a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/vshelnutt"><i class="fab fa-github"></i></a><a href="#projects"><button class="start">My Portfolio</button></a><a href="#"><i class="fab fa-linkedin"></i></a>
   </div>
+
+       
+        <div class="start" id="contact">Contact</div>
+  <div id="contactForm">
+  <!-- <div> -->
+  <h4>Call/text me at 281 850 6002, or...<br>Send me a message!</h4>
+  <small>I'll get back to you as quickly as possible</small>
+  <form action="#" method="POST">
+    <input placeholder="Name" type="text" name="name" required />
+    <input placeholder="Email" type="email" name="email" required />
+    <input placeholder="Subject" type="text" name="message" required />
+    <textarea placeholder="Comment"></textarea>
+    <input class="start" type="submit" />
+    <input class="start" type="reset" />
+  </form>
+</div>
+</div>
+
 </section>
   <!-- PROJECTS SECTION -->
   <section id="projects">
@@ -30,7 +52,7 @@
             <img class="projectlink" src ="prestige.jpg" alt = "Prestige Insurance">
          </a>
                <div class="hvrbox-layer_top">
-    <div class="hvrbox-text">A static, single page website, hosted on a my Raspberry Pi using a LAMP stack. Built with HTML, CSS, JavaScript, jQuery, an PHP. </div>
+    <div class="hvrbox-text">A static, single page website, hosted on a my Raspberry Pi using a LAMP stack. Built with HTML, CSS, JavaScript, jQuery, and PHP. </div>
   </div>
             <p>An interactive insurance company website. </p>
     </article>
@@ -47,6 +69,8 @@
     </article>
   </section>
 <!-- CONTACT SECTION -->
-
+ <button onclick="topFunction(50)" id="myBtn" title="go to top"><i class="fas fa-chevron-circle-up"></i></button>
 </body>
+<script type="text/javascript" src="topArrow.js"></script>
+<script type="text/javascript" src="contact.js"></script>
 </html>
