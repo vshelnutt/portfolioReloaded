@@ -2,7 +2,8 @@ var express = require("express"),
 app = express(),
  bodyParser = require("body-parser");
 
-app.use(express.static('views'))
+app.use(express.static('views/projects'));
+app.use(express.static('views'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
